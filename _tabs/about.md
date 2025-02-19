@@ -6,23 +6,23 @@ order: 4
 
 ## Cronus
 
-### [ Interests ]
+### **[ Interests ]**
 - WEB Security
 - Fuzzing
 - Offensive Research & Exploitation
 
 
-### [ Affiliation ]
+### **[ Affiliation ]**
 - Member of __TeamH4C__ (2022.05. ~ ) 
 - Member of __TOOR__ (2022.02. ~ )
 - Mandatory military service @ ROKAFA as Infosec Specialist (2022.02. ~ 2023.11.)
 - Undergrad @ __SCH__ , Information Security Major
 
 
-### [ Competition ]
-- Global Cyber Camp 2025 1st Team (Team_ Group2 )| GCC2025 프로젝트 1등 팀
-- The 6th TS “Find the Security Vulnerability” Competition, 2nd place ( Team_ TS(TypeScript) 큭큭.. ) | 제6회_TS_보안_허점을_찾아라 우수상
-- Chungcheong Region Cybersecurity Competition, Winner 5th place ( Team_ 염승빈여친아랴짱 ) | 충청권 사이버보안 경진대회 장려상
+### **[ Competition ]**
+- Global Cyber Camp 2025 1st Team (Team_ Group2 ) / GCC2025 프로젝트 1등 팀
+- The 6th TS “Find the Security Vulnerability” Competition, 2nd place ( Team_ TS(TypeScript) 큭큭.. ) / 제6회_TS_보안_허점을_찾아라 우수상
+- Chungcheong Region Cybersecurity Competition, Winner 5th place ( Team_ 염승빈여친아랴짱 ) / 충청권 사이버보안 경진대회 장려상
 - HackTheon 2024 Finalist ( Team_ Toorist )
 - DEFCON 32 QUALS 26th ( Team_ budaejjigae )
 - damCTF 2024 9th, Finalist ( Team_ budaejjigae )
@@ -32,7 +32,7 @@ order: 4
   
 
 
-### [ Bug Bounty ]
+### **[ Bug Bounty ]**
 #### <u>Microsoft Skype</u>
 - [RCE](https://github.com/Cr0nu3/RCE_Exploit_in_Microsoft_Skype) (Valid report but no bounty or CVE)
 
@@ -59,11 +59,11 @@ order: 4
 - Reflected XSS (Duplicated 😢)
 
 
-### [ Organization ]
+### **[ Organization ]**
 - 2021 YISF (Youth Information Security Festival)
 
 
-### [ ETC ]
+### **[ ETC ]**
 - 2025 GCC(Global Cyber Camp) Taiwan Trainee
 - Best of Best 13th (KITRI) 
 - Ethical Hacker Training Program (organized by NIS) / 윤리적 해커 양성 5기 교육생 (국정원 주관)
