@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Cronus # the main title
 
-tagline: Strive to be the Specialist # it will display as the subtitle
+tagline: Work really hard, be kind, then amazing things will happen. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
