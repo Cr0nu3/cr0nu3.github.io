@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Cronus
+## | <u>Cronus</u>
 
 ### **[ Interests ]**
 - WEB Security
@@ -71,3 +71,5 @@ order: 4
 - PatchDay verified Bug hunter (2023.07 ~ )
 - 2021 SCH AI&SW Week 1st
 
+### **[ Research Paper ]**
+- Retrieval-Agumented Generation 시스템의 구조적 취약성 및 공격 벡터 분석 ( 2024 정보보호 동계학술대회 )
