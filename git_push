@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# 사용법 체크
+if [ -z "$1" ]; then
+  echo "사용법: ./git_push.sh \"커밋 메시지\""
+  exit 1
+fi
+
+# Git 명령어 실행
+git add .
+git commit -m "$1"
+git push origin $(git branch --show-current)
+
+echo "✅ Git Push 완료!"

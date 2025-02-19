@@ -66,7 +66,7 @@ order: 4
 ### [ ETC ]
 - 2025 GCC(Global Cyber Camp) Taiwan Trainee
 - Best of Best 13th (KITRI) 
-- Ethical Hacker Training Program (organized by NIS) | 윤리적 해커 양성 5기 교육생 (국정원 주관)
+- Ethical Hacker Training Program (organized by NIS) / 윤리적 해커 양성 5기 교육생 (국정원 주관)
 - Dreamhack Community Mentor (2023.05 ~ )
 - PatchDay verified Bug hunter (2023.07 ~ )
 - 2021 SCH AI&SW Week 1st
