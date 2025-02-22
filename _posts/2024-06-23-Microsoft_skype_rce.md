@@ -6,7 +6,7 @@ author: Cronus
 date: 2024-06-23 18:26:00 
 categories: [Bug bounty]
 tags: [Bug Bounty]
-pin: false
+pin: true
 image:
   path: /assets/img/bugbounty/skype.png
   width: 300
