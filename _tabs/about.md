@@ -41,7 +41,8 @@ order: 4
 - FVE-2025-7105-70317, Pending FVEs ...
 
 #### <u>KVE</u>
-- KVE-2025-0013, Pending KVEs ...
+- KVE-2025-0013, KVE-2025-0381, KVE-2025-0419, KVE-2025-0420,
+- Pending KVEs ...
 
 #### <u>LLM Agent</u>
 - RCE & SQLi & SSRF & DoS & XSS
@@ -60,11 +61,6 @@ order: 4
 - CVE-2024-37549, CVE-2024-37558, CVE-2024-38689, CVE-2024-38724,
 - CVE-2024-38738, CVE-2024-43347, ...
 - Pending CVE
-  
-
-#### <u>Jeju Pass</u>
-- Reflected XSS (Duplicated 😢)
-
 
 ### **[ Organization ]**
 - 2021 YISF (Youth Information Security Festival)
