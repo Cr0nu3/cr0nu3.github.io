@@ -50,7 +50,7 @@ order: 4
 - CVE-2024-11958, CVE-2024-12704, CVE-2024-11824, CVE-2024-11850,
 - CVE-2025-29189, CVE-2025-29188, Pending CVEs...
 
-#### <u>Wordpress Plugin CVE</u>
+#### <u>Other CVEs</u>
   [Profile](https://patchstack.com/database/researcher/95805911-7466-482a-8c46-58bfb026a8a0)
 - CVE-2024-30554, CVE-2024-31119, CVE-2024-30553, CVE-2024-30545,
 - CVE-2024-31344, CVE-2024-31387, CVE-2024-32083, CVE-2024-32428,
