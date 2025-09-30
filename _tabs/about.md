@@ -4,17 +4,16 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## | <u>Cronus</u>
+## | <u>Eric Kim</u>
 
 ### **[ Interests ]**
+- Red Teaming
 - WEB Security
+- Android Application
 - Fuzzing with LLM
-- Offensive Research & Exploitation
-
 
 ### **[ Affiliation ]**
 - Member of __TeamH4C__ (2022.05. ~ ) 
-- Member of __TOOR__ (2022.02. ~ )
 - Mandatory military service @ ROKAFA as Infosec Specialist (2022.02. ~ 2023.11.)
 - Undergrad @ __SCH__ , Information Security Major
 
@@ -40,15 +39,15 @@ order: 4
 #### <u>Korea Financial Telecommunications & Clearings Institute</u>
 - FVE-2025-7105-70317, Pending FVEs ...
 
-#### <u>KVEs</u>
-- KVE-2025-0013, KVE-2025-0381, KVE-2025-0419, KVE-2025-0420,
-- Pending KVEs ...
-
 #### <u>LLM Agent</u>
 - RCE & SQLi & SSRF & DoS & XSS
 - CVE-2024-12910, CVE-2025-0184, CVE-2024-12909, CVE-2024-12911,
 - CVE-2024-11958, CVE-2024-12704, CVE-2024-11824, CVE-2024-11850,
 - CVE-2025-29189, CVE-2025-29188, Pending CVEs...
+
+#### <u>KVEs</u>
+- KVE-2025-0013, KVE-2025-0381, KVE-2025-0419, KVE-2025-0420,
+- KVE-2025-0335, KVE-2025-0357, KVE-2025-0608, Pending KVEs....
 
 #### <u>Other CVEs</u>
 - CVE-2024-30554, CVE-2024-31119, CVE-2024-30553, CVE-2024-30545,
