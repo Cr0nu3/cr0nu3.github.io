@@ -1,5 +1,5 @@
 ---
-title: "How to Build Effective Agents: Theori’s Approach"
+title: How to Build Effective Agents, Theori’s Approach
 description: >-
   Effective apporach of building agents that Theori team has 
 author: Cronus
