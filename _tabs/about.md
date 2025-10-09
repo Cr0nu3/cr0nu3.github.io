@@ -13,6 +13,7 @@ order: 4
 - Fuzzing with LLM
 
 ### **[ Affiliation ]**
+- Best of Best 13th (KITRI)
 - Member of __TeamH4C__ (2022.05. ~ ) 
 - Mandatory military service @ ROKAFA as Infosec Specialist (2022.02. ~ 2023.11.)
 - Undergrad @ __SCH__ , Information Security Major
@@ -65,8 +66,7 @@ order: 4
 
 
 ### **[ ETC ]**
-- 2025 GCC(Global Cyber Camp) Taiwan Trainee
-- Best of Best 13th (KITRI) 
+- 2025 GCC(Global Cyber Camp) Taiwan Trainee 
 - Ethical Hacker Training Program (organized by NIS) / 윤리적 해커 양성 5기 교육생 (국정원 주관)
 - Dreamhack Community Mentor (2023.05 ~ )
 - PatchDay verified Bug hunter (2023.07 ~ )
