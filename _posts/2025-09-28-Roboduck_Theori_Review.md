@@ -1,10 +1,10 @@
 ---
-title: Roboduck LLM Fuzzer Review: How the Theori Team Builds Effective AI Agents
+title: "Roboduck LLM Fuzzer Review: How the Theori Team Builds Effective AI Agents"
 description: >-
   How the Theori Team Makes Their LLM Fuzzer Effective
 author: Cronus
 date: 2025-09-28 20:50:00
-categories: [AI for Security]
+categories: [AI with Security, AI for Security]
 tags: [AI for Security]
 pin: false
 image:

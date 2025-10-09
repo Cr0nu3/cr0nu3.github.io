@@ -1,10 +1,10 @@
 ---
-title: How to Build Effective Agents: Theori’s Approach
+title: "How to Build Effective Agents: Theori’s Approach"
 description: >-
   Effective apporach of building agents that Theori team has 
 author: Cronus
 date: 2025-09-29 15:24:00
-categories: [LLM Engineering]
+categories: [LLM Engineering, LLM Agents]
 tags: [LLM Engineering]
 pin: false
 image:
