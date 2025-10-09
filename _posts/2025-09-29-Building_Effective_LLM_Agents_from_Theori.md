@@ -15,7 +15,7 @@ image:
 
 # Building Effective LLM Agents 
 
-# 0. Background
+## 0. Background
 
 ---
 
@@ -23,7 +23,7 @@ As a researcher working on LLM and MCP‑based automated vulnerability discovery
 
 This post explains Theori’s work in “my own words” for clarity, so there may be inaccuracies.
 
-# 1. Building Effective Agents
+## 1. Building Effective Agents
 
 ---
 
@@ -33,7 +33,7 @@ An LLM Agent should iteratively run “plan → tool call → incorporate result
 
 At each step, the agent’s choices are influenced by the prompt, tools, and output constraints, so it may choose different methods step to step. Therefore, the key is to increase the probability that it picks an appropriate method that leads to the goal.
 
-# 2. Decompose the Task
+## 2. Decompose the Task
 
 ---
 
@@ -41,7 +41,7 @@ The most effective simplification is to split the main task into multiple sub‑
 
 Furthermore, if a specific sub‑task must be repeated to solve the main task, it is better to expose a dedicated sub‑agent for that sub‑task as a tool that the main agent can call. This delivers two advantages.
 
-## 2.1 Examples in Theori CRS
+### 2.1 Examples in Theori CRS
 
 Theori CRS includes a [PoVProducerAgent](https://github.com/theori-io/aixcc-afc-archive/blob/25b7a3c2503fe9171714546906887c66687b4808/crs/agents/pov_producer.py#L206) that generates PoVs according to the vulnerability description. By observing human workflows, it identified common sub‑tasks in vulnerability analysis:
 
@@ -56,7 +56,7 @@ When a presumed PoV input fails to trigger the bug, use a debugger and auxiliary
 
 Each task above is delegated to a sub‑agent through tool calls. This keeps the main agent’s context concise and focused on the primary objective: generating a binary input that triggers the designated vulnerability.
 
-# 3. Curate the Toolset
+## 3. Curate the Toolset
 
 ---
 
@@ -64,7 +64,7 @@ At each loop iteration, the agent should call one or more provided tools. If we 
 
 A common pattern is to expose a Bash‑like interface so the agent can `grep` symbols or `cat` source files. But this leads to several pitfalls:
 
-## 3.1 Frequent failure patterns
+### 3.1 Frequent failure patterns
 
 1. Footguns:
     - Agents sometimes make odd choices. For example, they consume excessive resources, take too long, or incorrectly terminate the loop.
@@ -74,7 +74,7 @@ A common pattern is to expose a Bash‑like interface so the agent can `grep` sy
 3. Inefficient:
     - Predictable sub‑goals (for example, “find all functions that call foo”) require multiple Bash commands and multiple loop steps. This increases failure probabilities and wastes context.
 
-## 3.2 Example of curating the toolset in Theori CRS
+### 3.2 Example of curating the toolset in Theori CRS
 
 A good solution appears in the [SourceQuestionsAgent](https://github.com/theori-io/aixcc-afc-archive/blob/25b7a3c2503fe9171714546906887c66687b4808/crs/agents/source_questions.py#L14). This agent answers arbitrary natural‑language questions about the target codebase. If the goal is “understand source,” rather than exposing raw `grep` and `cat`, offer purpose‑built tools:
 
@@ -95,7 +95,7 @@ These tools run over a pre‑indexed database of the code. Technologies vary by 
     
     
 
-# 4. Structure Complex Outputs
+## 4. Structure Complex Outputs
 
 ---
 
@@ -140,7 +140,7 @@ These methods bias the model’s behavior by making the schema part of the promp
     - Requiring a short summary encourages focusing on core evidence, aiding automatic checks and human review.
     - Even if you only validate the result, overall quality improves.
 
-## 4.2 Example of getting complex output in Theori CRS
+### 4.2 Example of getting complex output in Theori CRS
 
 [DiffAnalyzerAgent](https://github.com/theori-io/aixcc-afc-archive/blob/25b7a3c2503fe9171714546906887c66687b4808/crs/agents/source_questions.py#L14) is a representative case. It analyzes git diffs to find multiple vulnerabilities introduced by code changes. Because a diff can introduce several issues, the agent must output a list of vulnerability entries, each with multiple fields:
 
@@ -180,7 +180,7 @@ Even when `conditions` are passed to a sub‑agent, the core purpose of this fie
 </vuln>
 ```
 
-# 5. Adapt to the Models
+## 5. Adapt to the Models
 
 ---
 
@@ -199,7 +199,7 @@ Some tips:
     - Some models fail to invoke tools reliably even when further work is clearly needed. Most providers offer a tool_choice parameter to <strong>force tool calls instead of text output</strong>.
     - This works particularly well with OpenAI’s o‑series, which can leverage hidden “deliberation tokens” to reflect on previous outputs and plan subsequent tool calls.
 
-## 5.1 Robust agent patterns and worked examples from Theori CRS
+### 5.1 Robust agent patterns and worked examples from Theori CRS
 
 - Rules:
     - Most Theori agents include multiple `<rule>..</rule>` blocks. Non‑negotiable rules live within `<important>..</important>`.
@@ -211,7 +211,7 @@ Some tips:
     - Theori agents use `tool_choice=required` to force tool calls and to ensure the terminal closes appropriately.
     - This is especially useful with small models. In some cases, unconstrained small models hallucinated entire “tool‑calling transcripts” inside text output, almost guaranteeing failure.
 
-# 6. Summary
+## 6. Summary
 
 1. Minimize initial context
     

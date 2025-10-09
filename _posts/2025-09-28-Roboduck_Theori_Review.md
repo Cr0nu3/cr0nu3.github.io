@@ -1,5 +1,5 @@
 ---
-title: "Roboduck LLM Fuzzer Review: How the Theori Team Builds Effective AI Agents"
+title: Roboduck LLM Fuzzer Review, How the Theori Team Builds Effective AI Agents
 description: >-
   How the Theori Team Makes Their LLM Fuzzer Effective
 author: Cronus
@@ -15,13 +15,13 @@ image:
 
 # RoboDuck from Theori
 
-# 0. Introduction
+## 0. Introduction
 
 ---
 
 This post is a review of the LLM Fuzzer created by the Theori team (AIxCC). It has been reinterpreted from the perspective of “How to build an effective agent,” and there may be some minor inaccuracies, so please keep that in mind.
 
-# 1. Background
+## 1. Background
 
 ---
 
@@ -34,7 +34,7 @@ A static analysis technique that traces the flow of variable values and constrai
     
     
 
-# 2. Approach
+## 2. Approach
 
 ---
 
@@ -44,7 +44,7 @@ A static analysis technique that traces the flow of variable values and constrai
     
     
 
-# 3. Bug Finding
+## 3. Bug Finding
 
 ---
 
@@ -53,16 +53,16 @@ A static analysis technique that traces the flow of variable values and constrai
     
     
 
-## 3-1. Static Analysis with Infer
+### 3-1. Static Analysis with Infer
 
-### [Infer analysis tool]
+#### [Infer analysis tool]
 
 - Rationale for choosing Infer: supports multiple languages and does not require defining project-specific rules for each repository.
 - Performs interprocedural value analysis to detect null dereferences, out-of-bounds errors, overflows, and more.
     
     
 
-### [Issues while using Infer]
+#### [Issues while using Infer]
 
 1. Infer must be made to fully understand the source code. This requires intercepting the actual compilation to collect build information, not just reading raw source text.
 2. Implementation is easier for C but difficult for Java.
@@ -73,14 +73,14 @@ A static analysis technique that traces the flow of variable values and constrai
 
 As a result, the Infer tool yields an empirically measured 99.9% false-positive rate.
 
-## 3-2. Static Analysis with LLMs
+### 3-2. Static Analysis with LLMs
 
 - Core concept: Have the LLM learn from code samples and find bugs.
 - Because the codebase under analysis is large, complex agent-based approaches are impractical. Therefore, use a single LLM.
     
     
 
-### [Core methodology]
+#### [Core methodology]
 
 - In “single function” mode, the LLM analyzes exactly one function at a time with no additional context.
 - In “large code chunk” mode, multiple source files can be added, and related code is grouped in the same context to perform interprocedural analysis.
@@ -89,7 +89,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     > 
     
 
-### [Results]
+#### \[Results\]
 
 - Found bugs that other existing techniques missed.
 - When provided with a diff, the task becomes easier. An LLM Agent receives the diff and focuses on bugs introduced by the changes. 
@@ -103,7 +103,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-# 4. Fuzzing
+## 4. Fuzzing
 
 ---
 
@@ -135,7 +135,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     - Additional notes
         - Stack hash: a normalized hash of the crashing call stack (e.g., FunctionA → FunctionB → crash site).
 
-# 5. Bug Filtering
+## 5. Bug Filtering
 
 ---
 
@@ -162,7 +162,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     
     
 
-# 6. PoV Generation
+## 6. PoV Generation
 
 ---
 
@@ -172,9 +172,9 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     
     
 
-## 6.1 Input Encoder
+### 6.1 Input Encoder
 
-### [Basic operation]
+#### [Basic operation]
 
 - A Python function that takes parameters and produces a binary blob consumable by the harness.
 - Parameters are chosen by the LLM Agent that authors the script.
@@ -183,7 +183,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-### [Centralization and caching]
+#### [Centralization and caching]
 
 - All PoV generators targeting the same harness reuse a shared encoder.
 - Implement and test the encoder thoroughly once, and cache its outputs.
@@ -191,9 +191,9 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     → Reduces debugging overhead and improves efficiency across multiple PoV attempts for the same harness.
     
 
-## 6.2 PoV Producer
+### 6.2 PoV Producer
 
-### [Role of the PoV Producer]
+#### [Role of the PoV Producer]
 
 - Does not directly access source code; instead queries a “source questions” agent for necessary information.
 - Does not perform debugging directly; instead tests via a Debug Agent.
@@ -201,7 +201,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     
     
 
-### [Parallel execution across multiple models]
+#### [Parallel execution across multiple models]
 
 - Run Claude Sonnet 3.5 and 4, and OpenAI o3 in parallel.
 - This incurs higher costs but yields results faster.
@@ -210,11 +210,11 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-# 7. Patch Generation
+## 7. Patch Generation
 
 ---
 
-## Patch generator and diff alignment capability
+### Patch generator and diff alignment capability
 
 - Bugs are sent simultaneously to the PoV Generator and the [Patch Generator](https://github.com/theori-io/aixcc-afc-archive/blob/main/crs/agents/produce_patch.py). 
 (An optimization to reduce latency at increased cost.)
@@ -227,7 +227,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
 
 (It may look like a small feature to apply diffs, but substantial research was required to ensure application accuracy.)
 
-## Automated patch validation and retries
+### Automated patch validation and retries
 
 - When a vulnerability is triggered by a PoV or fuzzing input, the related patch is automatically applied and verified to ensure the discovered vulnerability is actually fixed.
 - If the patch is incorrect, the patching process restarts.
@@ -236,7 +236,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-# 8. Fully Automated Pipeline of Theori CRS & Summary
+## 8. Fully Automated Pipeline of Theori CRS & Summary
 
 ---
 
@@ -257,7 +257,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-# 9. Operational Foundations: Orchestration, Source Browsing, Builds, and Docker Running
+## 9. Operational Foundations: Orchestration, Source Browsing, Builds, and Docker Running
 
 ---
 
@@ -266,17 +266,17 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     
     
 
-## 9.1 Orchestration and Scheduling
+### 9.1 Orchestration and Scheduling
 
 - Theori CRS manages all tasks within a single asynchronous Python process that includes thousands of concurrent workers.
 - [Job Scheduling](https://github.com/theori-io/aixcc-afc-archive/blob/main/crs/common/scheduler.py) manages access to deliberately limited resources such as LLM APIs and Docker.
 
-## 9.2 Source Browsing
+### 9.2 Source Browsing
 
 - Adopt a dedicated-tool approach via an in-house Agent’s [Source Browsing](https://github.com/theori-io/aixcc-afc-archive/blob/main/crs/modules/search_code.py).
 - Tooling list: TreeSitter, GTags, Joern, clang-ast, and others.
 
-## 9.3 Builds
+### 9.3 Builds
 
 - **CRS requires building the target project for almost every task.**
     - Exception: LLM-based static analysis, which only reads source code and thus does not require builds.
@@ -295,7 +295,7 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
         
         
 
-## 9.4 Docker Running
+### 9.4 Docker Running
 
 - Heavy tasks such as builds and fuzzing run on remote Docker hosts, separate from the CRS core.
 - Instead of dynamic scaling via Kubernetes, use statically allocated Docker hosts to simplify management and improve cost predictability.
@@ -304,6 +304,6 @@ As a result, the Infer tool yields an empirically measured 99.9% false-positive 
     
     
 
-# Reference
+## Reference
 
 - [AI Cyber Challenge and Theori's RoboDuck - Theori BLOG](https://theori.io/blog/aixcc-and-roboduck-63447)
