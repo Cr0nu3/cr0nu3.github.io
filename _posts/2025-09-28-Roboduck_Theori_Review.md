@@ -13,7 +13,7 @@ image:
   height: 300
 ---
 
-# RoboDuck from Theori — English Translation
+# RoboDuck from Theori
 
 # 0. Introduction
 

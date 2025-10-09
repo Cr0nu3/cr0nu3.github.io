@@ -13,7 +13,7 @@ image:
   height: 300
 ---
 
-# Building Effective LLM Agents (Eng)
+# Building Effective LLM Agents 
 
 # 0. Background
 
