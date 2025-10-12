@@ -8,7 +8,7 @@ categories: [LLM Engineering, LLM Agents]
 tags: [LLM Engineering]
 pin: false
 image:
-  path: /assets/img/building_effective_llm_agent/logo.webp
+  path: /assets/img/anthropic_agent/logo.jpg
   width: 300
   height: 300
 ---
