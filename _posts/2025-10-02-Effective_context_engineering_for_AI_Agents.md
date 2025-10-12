@@ -3,7 +3,7 @@ title: Anthropic’s Approach to Effective Context Engineering for AI Agents
 description: >-
   Effective Agent-Building Methods Used by Anthropic
 author: Cronus
-date: 2025-10-12 13:38:00
+date: 2025-10-02 13:38:00
 categories: [LLM Engineering, LLM Agents]
 tags: [LLM Engineering]
 pin: false
