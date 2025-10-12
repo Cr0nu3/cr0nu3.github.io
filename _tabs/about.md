@@ -7,10 +7,10 @@ order: 4
 ## | <u>Eric Kim</u>
 
 ### **[ Interests ]**
-- Red Teaming
 - WEB Security
 - Android Application
-- Fuzzing with LLM
+- Red Teaming
+- LLM Research: Security for AI & AI for Security
 
 ### **[ Affiliation ]**
 - Best of Best 13th (KITRI)
