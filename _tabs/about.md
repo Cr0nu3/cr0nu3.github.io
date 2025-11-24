@@ -18,7 +18,7 @@ order: 4
 - Mandatory military service @ ROKAFA as Infosec Specialist (2022.02. ~ 2023.11.)
 - Undergrad @ __SCH__ , Information Security Major
 
-### Talks
+### **[ Talks ]**
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
