@@ -18,6 +18,8 @@ order: 4
 - Mandatory military service @ ROKAFA as Infosec Specialist (2022.02. ~ 2023.11.)
 - Undergrad @ __SCH__ , Information Security Major
 
+### Talks
+- Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
 - Hacktheon 2025 Finalist ( Team_ 스키부 )
@@ -47,8 +49,10 @@ order: 4
 - CVE-2025-29189, CVE-2025-29188, Pending CVEs...
 
 #### <u>KVEs</u>
-- KVE-2025-0013, KVE-2025-0381, KVE-2025-0419, KVE-2025-0420,
-- KVE-2025-0335, KVE-2025-0357, KVE-2025-0608, Pending KVEs....
+- KVE-2025-0013, KVE-2025-0357, KVE-2025-0381, KVE-2025-0419, 
+- KVE-2025-0420, KVE-2025-0335, KVE-2025-0589, KVE-2025-0608, 
+- KVE-2025-0689, KVE-2025-0713, KVE-2025-0798, KVE-2025-0826, 
+- KVE-2025-0827, KVE-2025-0830, Pending KVEs....
 
 #### <u>Other CVEs</u>
 - CVE-2024-30554, CVE-2024-31119, CVE-2024-30553, CVE-2024-30545,
