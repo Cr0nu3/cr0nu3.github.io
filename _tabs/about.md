@@ -22,17 +22,19 @@ order: 4
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
+- Srdnlen CTF Finalist, 5th place ( Team_ H4CTeam)
+- EHAX CTF, 4th place ( Team_ teamh4c )
+- UniVsThreats26 Quals 2026, 3rd place ( Team_ teamh4c )
+- Batman's Kitchen CTF 2026 3rd place ( Team_ Batguys )
+- BITSCTF 2026 6th place ( Team_ teamh4c)
 - Hacktheon 2025 Finalist ( Team_ 스키부 )
 - Global Cyber Camp 2025 1st Team ( Team_ Group2 ) / GCC2025 프로젝트 1등 팀
 - The 6th TS “Find the Security Vulnerability” Competition, 2nd place ( Team_ TS(TypeScript) 큭큭.. ) / 제6회_TS_보안_허점을_찾아라 우수상
 - Chungcheong Region Cybersecurity Competition, Winner 5th place ( Team_ 염승빈여친아랴짱 ) / 충청권 사이버보안 경진대회 장려상
 - HackTheon 2024 Finalist ( Team_ Toorist )
-- DEFCON 32 QUALS 26th ( Team_ budaejjigae )
-- damCTF 2024 9th, Finalist ( Team_ budaejjigae )
+- damCTF 2024 9th place, Finalist ( Team_ budaejjigae )
 - Hackfest 2024 Finalist ( Team_ Tourist )
-- Whitehat Contest 2022 4th, Finalist ( Team_ 아니다싶으면밥먹으러감 )
-- CCE 2022 17th, General Division ( Team_ PoC )
-  
+- Whitehat Contest 2022 4th place, Finalist ( Team_ 아니다싶으면밥먹으러감 )
 
 
 ### **[ Bug Bounty ]**
@@ -70,6 +72,7 @@ order: 4
 
 
 ### **[ ETC ]**
+- BoB 14th, Project Leader, Multi-Agent System Vulnerability Research
 - 2025 GCC(Global Cyber Camp) Taiwan Trainee 
 - Ethical Hacker Training Program (organized by NIS) / 윤리적 해커 양성 5기 교육생 (국정원 주관)
 - Dreamhack Community Mentor (2023.05 ~ )
