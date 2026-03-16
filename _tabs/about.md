@@ -22,6 +22,7 @@ order: 4
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
+- DiceCTF 2026 Finalist ( Team_ teamh4c)
 - MidnightCTF 2026 Quals, 2nd place ( Team_ TeamH4C )
 - UTCTF 2026, 4th place ( Team_ teamh4c )
 - Srdnlen CTF 2026 Finalist, 5th place ( Team_ H4CTeam)
