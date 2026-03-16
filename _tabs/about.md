@@ -22,8 +22,10 @@ order: 4
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
-- Srdnlen CTF Finalist, 5th place ( Team_ H4CTeam)
-- EHAX CTF, 4th place ( Team_ teamh4c )
+- MidnightCTF 2026 Quals, 2nd place ( Team_ TeamH4C )
+- UTCTF 2026, 4th place ( Team_ teamh4c )
+- Srdnlen CTF 2026 Finalist, 5th place ( Team_ H4CTeam)
+- EHAX CTF 2026, 4th place ( Team_ teamh4c )
 - UniVsThreats26 Quals 2026, 3rd place ( Team_ teamh4c )
 - Batman's Kitchen CTF 2026 3rd place ( Team_ Batguys )
 - BITSCTF 2026 6th place ( Team_ teamh4c)
