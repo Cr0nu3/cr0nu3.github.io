@@ -71,6 +71,8 @@ order: 4
 ### **[ Organization ]**
 - 2021 YISF (Youth Information Security Festival)
 
+### **[ AI ]**
+- 2026 Kakao AI Top 100 Finalist, selected among the top 100 participants for excellence in 2026 Kakao AI Challenge (organized by [Kakao Corp](https://www.kakaocorp.com/page/?lang=ENG&tab=all))
 
 ### **[ ETC ]**
 - BoB 14th, Project Leader, Multi-Agent System Vulnerability Research
