@@ -23,6 +23,9 @@ order: 4
 
 ### **[ Competition ]**
 - DiceCTF 2026 Finalist ( Team_ teamh4c)
+- Undutmaning 2026, 2nd place ( Team_ TeamH4C )
+- BSidesSF CTF 2026, 3rd place ( Team_ TeamH4C )
+- TAMUctf 2026, 4th place ( Team_ TeamH4C )
 - MidnightCTF 2026 Quals, 2nd place ( Team_ TeamH4C )
 - UTCTF 2026, 4th place ( Team_ teamh4c )
 - Srdnlen CTF 2026 Finalist, 5th place ( Team_ H4CTeam)
