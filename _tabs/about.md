@@ -9,8 +9,8 @@ order: 4
 ### **[ Interests ]**
 - WEB Security
 - Android Application
-- Red Teaming
 - LLM Research: Security for AI & AI for Security
+- Red Teaming
 
 ### **[ Affiliation ]**
 - Best of Best 13th (KITRI)
@@ -22,6 +22,8 @@ order: 4
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
+- TexsawCTF 2026, 2nd place ( Team_ TeamH4C )
+- Codegate 2026 Finalist ( Team_ TeamH4C )
 - DiceCTF 2026 Finalist ( Team_ teamh4c)
 - Undutmaning 2026, 2nd place ( Team_ TeamH4C )
 - BSidesSF CTF 2026, 3rd place ( Team_ TeamH4C )
