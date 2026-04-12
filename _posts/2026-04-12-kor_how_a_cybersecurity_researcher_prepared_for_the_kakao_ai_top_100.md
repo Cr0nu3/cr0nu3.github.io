@@ -1,7 +1,7 @@
 ---
 title: 사이버보안 연구자는 AI Top 100 대회를 어떻게 준비했을까? (1편)
 description: >-
-  Effective Agent-Building Methods Used by Anthropic
+  보안 연구자가 설계한 완전 자동화 에이전트 시스템으로 Kakao AI Top 100 본선에 진출한 전략과 실전 노하우를 공유합니다.
 author: Cronus
 date: 2026-04-10 09:01:00
 categories: [LLM Engineering, LLM Agents]
