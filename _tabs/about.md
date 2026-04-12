@@ -22,9 +22,10 @@ order: 4
 - Defcamp2025, "Let’s make the LLM a Defector: Deceiving LLM into Attacking its Own Agent through natural language", Expert Session
 
 ### **[ Competition ]**
-- TexsawCTF 2026, 2nd place ( Team_ TeamH4C )
-- Codegate 2026 Finalist ( Team_ TeamH4C )
 - DiceCTF 2026 Finalist ( Team_ teamh4c)
+- Codegate 2026 Finalist ( Team_ TeamH4C )
+- SillyCTF2 2026, 1st place ( Team_ TeamH4C )
+- TexsawCTF 2026, 2nd place ( Team_ TeamH4C )
 - Undutmaning 2026, 2nd place ( Team_ TeamH4C )
 - BSidesSF CTF 2026, 3rd place ( Team_ TeamH4C )
 - TAMUctf 2026, 4th place ( Team_ TeamH4C )
