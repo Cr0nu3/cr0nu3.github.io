@@ -123,6 +123,7 @@ When I tested my system on tasks that were not HITL (Human-in-the-Loop) types, t
 | Discover Innovators in the News | 80 | 20 | 60 | +40 | 64 min  |
 | **Total Score** | 345 | 170  | 273 | - | - |
 | **Score Percentage** | - | Approx. 49% | Approx. 80% | - | - |
+
 It also addressed the key questions as follows:
 
 >
