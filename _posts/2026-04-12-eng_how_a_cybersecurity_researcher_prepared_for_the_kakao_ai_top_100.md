@@ -112,18 +112,17 @@ Based on these answers, I proceeded with the system design.
 ### 4.4 (Key) Did the system actually solve the original problems?
 Yes. The automated system definitively addressed the issues I had with baseline approaches.
 ![image3.png](/assets/img/aitop100/flowchart.png)
-제 시스템으로 HITL 유형이 아닌 문제를 맡겨봤더니, 테스트 결과는 아래와 같이 잘 나왔습니다.
+When I tested my system on tasks that were not HITL (Human-in-the-Loop) types, the results were successful, as shown below.
 
-| **문제이름** | 배점 | **순수 LLM 획득 점수(A)** | **제작된 시스템 획득 점수(B)** | **향상도 (B-A)** | **시스템 문제 풀이 소요 시간** |
+| **Problem Name** | Max Score | **Vanilla LLM Score (A)** | **Developed System Score (B)** | **Improvement (B-A)** | **System Solving Time**|
 | --- | --- | --- | --- | --- | --- |
-| 2026 수능, 그날의 대화 | 55 | 20 | 55  | +35 | 54분  |
-| 프리라이더를 찾아라 | 75 | 35 | 45 | +10 | 45분  |
-| 웹사이트 버그 찾기 | 60 | 50 | 60 | +10 | 51분  |
-| 인수인계 자료 작성 | 75 | 45 | 53 | +8 | 47분  |
-| 뉴스 속 혁신가를 발굴하라 | 80 | 20 | 60 | +40 | 64분  |
-| **총점** | 345 | 170  | 273 | - | - |
-| **점수 획득률** | - | 약 49% | 약 80% | - | - |
-
+| 2026 CSAT: The Dialogue of That Day | 55 | 20 | 55  | +35 | 54 min  |
+| Find the Free Rider | 75 | 35 | 45 | +10 | 45 min  |
+| Finding Website Bugs | 60 | 50 | 60 | +10 | 51 min  |
+| Drafting Handover Documents | 75 | 45 | 53 | +8 | 47 min  |
+| Discover Innovators in the News | 80 | 20 | 60 | +40 | 64 min  |
+| **Total Score** | 345 | 170  | 273 | - | - |
+| **Score Percentage** | - | Approx. 49% | Approx. 80% | - | - |
 It also addressed the key questions as follows:
 
 >
