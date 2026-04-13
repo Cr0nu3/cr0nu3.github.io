@@ -8,7 +8,16 @@
       "Bash(git -C /Users/cronus/github_blog/cr0nu3.github.io add _posts/2026-04-12-kor_how_a_cybersecurity_researcher_prepared_for_the_kakao_ai_top_100.md)",
       "Bash(git -C /Users/cronus/github_blog/cr0nu3.github.io commit -m \"fix: correct post date from 2026-04-13 to 2026-04-12 to prevent Jekyll future post suppression\")",
       "Bash(git -C /Users/cronus/github_blog/cr0nu3.github.io push)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(ping -c 1 github.com)",
+      "Bash(curl -v --max-time 5 https://github.com)",
+      "Read(//private/var/run/**)",
+      "Bash(networksetup -getdnsservers Wi-Fi)",
+      "Bash(scutil --dns)",
+      "Bash(nslookup github.com 1.1.1.1)",
+      "Bash(curl -v --max-time 5 https://1.1.1.1)",
+      "Bash(sudo dscacheutil:*)",
+      "Bash(sudo killall:*)"
     ]
   }
 }

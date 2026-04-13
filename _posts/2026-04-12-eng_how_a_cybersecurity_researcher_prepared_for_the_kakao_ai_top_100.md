@@ -6,7 +6,7 @@ author: Cronus
 date: 2026-04-10 09:01:00
 categories: [LLM Engineering, LLM Agents]
 tags: [LLM Engineering]
-pin: false
+pin: True
 image:
   path: /assets/img/aitop100/aitop100_title.png
   width: 300
