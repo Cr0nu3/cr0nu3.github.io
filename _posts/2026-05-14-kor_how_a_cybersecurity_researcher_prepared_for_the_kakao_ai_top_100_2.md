@@ -16,7 +16,7 @@ image:
 ## 1. TL;DR
 ---
 **“범용적인 문제를 효율적으로 처리하는 시스템을 설계하려면 어떻게 해야할까?”, “Kakao AI Top 100를 어떻게 준비해야 할까?”**
-[1편](https://cr0nu3.github.io/posts/kor_how_a_cybersecurity_researcher_prepared_for_the_kakao_ai_top_100-copy/)에서 던진 질문에 대한 답을 소개하려 합니다. 이 글은 제가 제작한 시스템을 기술적인 관점에서 소개하는 글입니다. 1편이 대회 준비 과정과 전체적인 접근 방식을 다뤘다면, 이번 글에서는 실제로 문제를 완전 자동화로 풀기 위해 설계한 시스템 구조와 핵심 구현 방식을 중심으로 정리했습니다.
+[1편](https://cr0nu3.github.io/posts/kor_how_a_cybersecurity_researcher_prepared_for_the_kakao_ai_top_100/)에서 던진 질문에 대한 답을 소개하려 합니다. 이 글은 제가 제작한 시스템을 기술적인 관점에서 소개하는 글입니다. 1편이 대회 준비 과정과 전체적인 접근 방식을 다뤘다면, 이번 글에서는 실제로 문제를 완전 자동화로 풀기 위해 설계한 시스템 구조와 핵심 구현 방식을 중심으로 정리했습니다.
 ## 2. Why I Built this System
 ---
 이 시스템을 만든 출발점은 하나의 질문이었습니다.
@@ -199,7 +199,7 @@ LLM은 문제 풀이 과정에서 충분한 evidence 없이 그럴듯한 답을 
 LLM의 고질적인 문제인 “Hallucination”과 “Self-Evaluation Bias”를 포함한 여러 문제를 아키텍처 설계로 완화하여 신뢰할만한 답변을 보장하게끔 하였습니다.
 
 ## 6. Results
-제 시스템으로 HITL 유형이 아닌 문제를 풀게한 결과는 아래와 같습니다. (문제 선별 기준은 [여기서](https://cr0nu3.github.io/posts/kor_how_a_cybersecurity_researcher_prepared_for_the_kakao_ai_top_100-copy/#32-%EC%99%84%EC%A0%84-%EC%9E%90%EB%8F%99%ED%99%94%EB%A1%9C-%ED%92%80-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%AC%B8%EC%A0%9C-%EC%9C%A0%ED%98%95-%EB%B6%84%EB%A5%98) 확인 가능합니다)
+제 시스템으로 HITL 유형이 아닌 문제를 풀게한 결과는 아래와 같습니다. (문제 선별 기준은 [여기서](https://cr0nu3.github.io/posts/kor_how_a_cybersecurity_researcher_prepared_for_the_kakao_ai_top_100/#32-%EC%99%84%EC%A0%84-%EC%9E%90%EB%8F%99%ED%99%94%EB%A1%9C-%ED%92%80-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%AC%B8%EC%A0%9C-%EC%9C%A0%ED%98%95-%EB%B6%84%EB%A5%98) 확인 가능합니다)
 
 | **문제이름** | 배점 | **순수 LLM 획득 점수(A)** | **제작된 시스템 획득 점수(B)** | **향상도 (B-A)** | **시스템 문제 풀이 소요 시간** |
 | --- | --- | --- | --- | --- | --- |
